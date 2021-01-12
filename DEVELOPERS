@@ -2206,9 +2206,9 @@ F:	package/python-botocore/
 F:	package/python-jmespath/
 F:	package/python-s3transfer/
 
-N:  Raul Hidalgo Caballero <deinok@deinok.com>
-F:  package/dotnet/
-F:  package/dotnet-sdk/
+N:	Raul Hidalgo Caballero <deinok@deinok.com>
+F:	package/dotnet/
+F:	package/dotnet-sdk/
 
 N:	Refik Tuzakli <tuzakli.refik@gmail.com>
 F:	package/freescale-imx/
