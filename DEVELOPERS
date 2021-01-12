@@ -2209,6 +2209,7 @@ F:	package/python-s3transfer/
 N:	Raul Hidalgo Caballero <deinok@deinok.com>
 F:	package/dotnet/
 F:	package/dotnet-sdk/
+F:	support/testing/tests/package/test_dotnet_sdk.py
 
 N:	Refik Tuzakli <tuzakli.refik@gmail.com>
 F:	package/freescale-imx/
