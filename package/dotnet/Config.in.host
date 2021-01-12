@@ -1,0 +1,15 @@
+config BR2_PACKAGE_HOST_DOTNET_ARCH_SUPPORTS
+	bool
+	default y if BR2_HOSTARCH = "x86_64"
+
+config BR2_PACKAGE_HOST_DOTNET_RID
+	string
+	default "linux-x64" if BR2_HOSTARCH = "x86_64"
+
+config BR2_PACKAGE_HOST_DOTNET_SDK
+	bool "host dotnet-sdk"
+	depends on BR2_PACKAGE_HOST_DOTNET_ARCH_SUPPORTS
+	help
+		Dotnet SDK
+
+		https://dotnet.microsoft.com/
