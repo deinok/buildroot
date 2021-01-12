@@ -11,10 +11,10 @@ HOST_DOTNET_SDK_LICENSE = MIT
 HOST_DOTNET_SDK_LICENSE_FILES = LICENSE.txt ThirdPartyNotices.txt
 
 define HOST_DOTNET_SDK_INSTALL_CMDS
-	(mkdir -p $(HOST_DIR)/usr/share/dotnet/)
-	(cp -dpfr $(@D)/* $(HOST_DIR)/usr/share/dotnet/)
-	(mkdir -p $(HOST_DIR)/usr/bin/)
-	(ln -s $(HOST_DIR)/usr/share/dotnet/dotnet $(HOST_DIR)/usr/bin/dotnet)
+	mkdir -p $(HOST_DIR)/usr/share/dotnet/
+	cp -dpfr $(@D)/* $(HOST_DIR)/usr/share/dotnet/
+	mkdir -p $(HOST_DIR)/usr/bin/
+	ln -s ../share/dotnet/dotnet $(HOST_DIR)/usr/bin/dotnet
 endef
 
 $(eval $(host-generic-package))
