@@ -10,6 +10,6 @@ config BR2_PACKAGE_HOST_DOTNET_SDK
 	bool "host dotnet-sdk"
 	depends on BR2_PACKAGE_HOST_DOTNET_ARCH_SUPPORTS
 	help
-		Dotnet SDK
+	  Dotnet SDK - Core functionality needed to compile .NET projects
 
-		https://dotnet.microsoft.com/
+	  https://dotnet.microsoft.com/

@@ -20,7 +20,6 @@ class TestHostDotnetSdk(TestDotnetSdkBase):
         """
 
     def test_run(self):
-        env = os.environ.copy()
         hostdir = os.path.join(self.builddir, 'host')
         dotnet = os.path.join(hostdir, 'usr', 'bin', 'dotnet')
         cmd = [dotnet, '--version']
